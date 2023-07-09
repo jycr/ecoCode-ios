@@ -1,8 +1,8 @@
 {
-	"key": "EPOW002",
-	"title": "Save Mode Awareness",
+	"key": "EC602",
+	"title": "Charge Awareness",
 	"defaultSeverity": "Info",
-	"description": "Taking into account when the device is entering or exiting the power save mode is a good practice.",
+	"description": "Monitoring power changes and customizing behavior depending on battery level is a good practice.",
 	"status": "ready",
 	"remediation": {
 		"func": "Constant/Issue",

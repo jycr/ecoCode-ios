@@ -21,11 +21,13 @@ import io.ecocode.ios.swift.antlr.generated.Swift5Parser;
 import io.ecocode.ios.checks.RuleCheck;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.sonar.check.Rule;
+import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
 /**
  * Check the presence of the class "Timer".
  */
-@Rule(key = "EIDL002")
+@Rule(key = "EC601")
+@DeprecatedRuleKey(repositoryKey = "ecoCode-swift", ruleKey = "EIDL002")
 public class RigidAlarmCheck extends RuleCheck {
     private static final String DEFAULT_ISSUE_MESSAGE = "Setting a tolerance for timers will allow them to fire later than the scheduled fire date.";
 

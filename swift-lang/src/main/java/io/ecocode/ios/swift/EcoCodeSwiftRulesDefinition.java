@@ -38,7 +38,7 @@ public class EcoCodeSwiftRulesDefinition implements RulesDefinition {
     private static final String RESOURCE_BASE_PATH = "io/ecocode/rules/swift";
 
     private static final String NAME = Swift.REPOSITORY_NAME;
-    private static final String LANGUAGE = Swift.KEY;
+    private static final String LANGUAGE = Swift.LANGUAGE_KEY;
     private static final List<Class<?>> CHECK_CLASSES = List.of(
             // geolocatisation
             ThriftyGeolocation.class,

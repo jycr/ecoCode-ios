@@ -31,7 +31,7 @@ public class ParseTreeAnalyzerTest {
     public void analyze() throws Throwable {
         final SwiftAntlrContext antlrContext = new SwiftAntlrContext();
         SensorContextTester sensorContext = TestHelper.testFile("checks/IdleTimerDisabled_trigger.swift");
-        ParseTreeAnalyzer analyzer = new ParseTreeAnalyzer(Swift.KEY, InputFile.Type.MAIN, antlrContext, sensorContext);
+        ParseTreeAnalyzer analyzer = new ParseTreeAnalyzer(Swift.LANGUAGE_KEY, InputFile.Type.MAIN, antlrContext, sensorContext);
         analyzer.analyze(new EcoCodeSwiftVisitor());
 
         assertThat(sensorContext.allIssues()).hasSize(1);

@@ -1,8 +1,8 @@
 {
-	"key": "ESOB002",
-	"title": "Thrifty Geolocation",
+	"key": "EC606",
+	"title": "Motion Sensor Update Rate",
 	"defaultSeverity": "Major",
-	"description": "Adapt location accuracy and type to applications needs.",
+	"description": "Set appropriate motion sensor update rates for the application's needs",
 	"status": "ready",
 	"remediation": {
 		"func": "Constant/Issue",

@@ -21,11 +21,13 @@ import io.ecocode.ios.swift.antlr.generated.Swift5Parser;
 import io.ecocode.ios.checks.RuleCheck;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.sonar.check.Rule;
+import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
 /**
  * Check the use of "AVCaptureTorchMode.on", "setTorchModeOn(level: Float)", or "torchMode = .on" and triggers when set to true.
  */
-@Rule(key = "ESOB006")
+@Rule(key = "EC608")
+@DeprecatedRuleKey(repositoryKey = "ecoCode-swift", ruleKey = "ESOB006")
 public class TorchFreeCheck extends RuleCheck {
     private static final String DEFAULT_ISSUE_MESSAGE = "Usage of `AVCaptureDevice#torchMode` or `AVCaptureDevice#setTorchModeOn(level:)` must absolutely be avoided";
     @Override

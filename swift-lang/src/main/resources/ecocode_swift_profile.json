@@ -1,14 +1,13 @@
 {
-  "name": "ecoCode",
   "ruleKeys": [
-    "EIDL001",
-    "EIDL002",
-    "EPOW001",
-    "EPOW002",
-    "ESOB001",
-    "ESOB002",
-    "ESOB003",
-    "ESOB005",
-    "ESOB006"
+    "EC600",
+    "EC601",
+    "EC602",
+    "EC603",
+    "EC604",
+    "EC605",
+    "EC606",
+    "EC607",
+    "EC608"
   ]
 }

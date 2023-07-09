@@ -1,5 +1,5 @@
 {
-	"key": "EIDL002",
+	"key": "EC601",
 	"title": "Rigid Alarm",
 	"defaultSeverity": "Major",
 	"description": "Setting a tolerance for timers will allow them to fire later than the scheduled fire date.",

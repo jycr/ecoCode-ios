@@ -1,8 +1,8 @@
 {
-	"key": "ESOB001",
-	"title": "Location updates pause disabled",
+	"key": "EC605",
+	"title": "Thrifty Geolocation",
 	"defaultSeverity": "Major",
-	"description": "Do not disable location updates pause, unless absolutely necessary.",
+	"description": "Adapt location accuracy and type to applications needs.",
 	"status": "ready",
 	"remediation": {
 		"func": "Constant/Issue",

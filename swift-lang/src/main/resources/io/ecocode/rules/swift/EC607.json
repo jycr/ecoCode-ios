@@ -1,8 +1,8 @@
 {
-	"key": "EIDL001",
-	"title": "Idle timer disabled",
+	"key": "EC607",
+	"title": "Brightness Override disabled",
 	"defaultSeverity": "Major",
-	"description": "Do not disable idle timer, unless absolutely necessary.",
+	"description": "Do not force Brightness in your code, unless absolutely necessary.",
 	"status": "ready",
 	"remediation": {
 		"func": "Constant/Issue",

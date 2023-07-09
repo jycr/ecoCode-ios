@@ -32,7 +32,7 @@ public class CheckTestHelper {
         SensorContextTester context = TestHelper.testFile(relativePath);
 
         final SwiftAntlrContext antlrContext = new SwiftAntlrContext();
-        new ParseTreeAnalyzer(Swift.KEY, InputFile.Type.MAIN, antlrContext, context)
+        new ParseTreeAnalyzer(Swift.LANGUAGE_KEY, InputFile.Type.MAIN, antlrContext, context)
                 .analyze(new EcoCodeSwiftVisitor());
 
         return context;

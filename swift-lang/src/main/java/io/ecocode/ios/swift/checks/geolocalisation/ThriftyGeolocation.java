@@ -22,10 +22,12 @@ import io.ecocode.ios.swift.antlr.generated.Swift5Parser;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 import org.sonar.check.Rule;
+import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
 import static io.ecocode.ios.swift.checks.CheckHelper.isImportExisting;
 
-@Rule(key = "ESOB002")
+@Rule(key = "EC605")
+@DeprecatedRuleKey(repositoryKey = "ecoCode-swift", ruleKey = "ESOB002")
 public class ThriftyGeolocation extends RuleCheck {
     private static final String DEFAULT_ISSUE_MESSAGE = "Adapt location accuracy and type to applications needs.";
     private Swift5Parser.Import_declarationContext importTree = null;

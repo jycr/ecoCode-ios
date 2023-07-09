@@ -21,11 +21,13 @@ import io.ecocode.ios.swift.antlr.generated.Swift5Parser;
 import io.ecocode.ios.checks.RuleCheck;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.sonar.check.Rule;
+import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
 /**
  * Check the use of "UIApplication.shared.isIdleTimerDisabled" and triggers when set to true.
  */
-@Rule(key = "EIDL001")
+@Rule(key = "EC600")
+@DeprecatedRuleKey(repositoryKey = "ecoCode-swift", ruleKey = "EIDL001")
 public class IdleTimerDisabledCheck extends RuleCheck {
     private static final String DEFAULT_ISSUE_MESSAGE = "Do not disable idle timer, unless absolutely necessary.";
 

@@ -1,5 +1,5 @@
 {
-	"key": "ESOB006",
+	"key": "EC608",
 	"title": "Sobriety: Torch Free",
 	"defaultSeverity": "Major",
 	"description": "Usage of `AVCaptureDevice#torchMode` or `AVCaptureDevice#setTorchModeOn(level:)` must absolutely be avoided. These methods can be used to access the device's flashlight, which can be a potential security risk and should only be used when necessary.",

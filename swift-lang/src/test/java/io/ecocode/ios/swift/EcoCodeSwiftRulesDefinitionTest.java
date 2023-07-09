@@ -52,9 +52,9 @@ class EcoCodeSwiftRulesDefinitionTest {
     @Test
     @DisplayName("Test repository metadata")
     void testMetadata() {
-        assertThat(repository.name()).isEqualTo("ecoCode");
+        assertThat(repository.name()).isEqualTo("ecoCode iOS");
         assertThat(repository.language()).isEqualTo("swift");
-        assertThat(repository.key()).isEqualTo("ecoCode-swift");
+        assertThat(repository.key()).isEqualTo("ecocode-ios-swift");
     }
 
     @Test
@@ -64,7 +64,7 @@ class EcoCodeSwiftRulesDefinitionTest {
 
     @Test
     void assertRuleProperties() {
-        Rule rule = repository.rule("EIDL001");
+        Rule rule = repository.rule("EC600");
         assertThat(rule).isNotNull();
         assertThat(rule.name()).isEqualTo("Idle timer disabled");
         assertThat(rule.debtRemediationFunction().type()).isEqualTo(Type.CONSTANT_ISSUE);

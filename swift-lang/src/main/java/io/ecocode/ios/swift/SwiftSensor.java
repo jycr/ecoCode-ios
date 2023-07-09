@@ -29,7 +29,7 @@ public class SwiftSensor implements Sensor {
     @Override
     public void describe(SensorDescriptor sensorDescriptor) {
         sensorDescriptor
-                .onlyOnLanguage(Swift.KEY)
+                .onlyOnLanguage(Swift.LANGUAGE_KEY)
                 .name("ecoCode Swift Sensor")
                 .onlyOnFileType(InputFile.Type.MAIN);
     }
@@ -38,7 +38,7 @@ public class SwiftSensor implements Sensor {
     public void execute(SensorContext sensorContext) {
         final SwiftAntlrContext antlrContext = new SwiftAntlrContext();
         // Analyse source files
-        new ParseTreeAnalyzer(Swift.KEY, InputFile.Type.MAIN, antlrContext, sensorContext)
+        new ParseTreeAnalyzer(Swift.LANGUAGE_KEY, InputFile.Type.MAIN, antlrContext, sensorContext)
                 .analyze(new EcoCodeSwiftVisitor());
     }
 }

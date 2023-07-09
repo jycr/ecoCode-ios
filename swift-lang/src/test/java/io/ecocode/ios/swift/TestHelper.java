@@ -38,7 +38,7 @@ public class TestHelper {
                 .setOriginalLineEndOffsets(new int[LINE_COUNT])
                 .setOriginalLineStartOffsets(new int[LINE_COUNT])
                 .setModuleBaseDir(Paths.get(TEST_ROOT))
-                .setLanguage(Swift.KEY).build();
+                .setLanguage(Swift.LANGUAGE_KEY).build();
         context.fileSystem().add(testFile);
 
         return context;

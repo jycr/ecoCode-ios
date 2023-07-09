@@ -10,7 +10,7 @@
     <artifactId>ecocode-sonar-ios-plugin</artifactId>
     <packaging>sonar-plugin</packaging>
 
-    <name>ecoCode iOS plugin</name>
+    <name>ecoCode iOS SonarQube plugin</name>
     <description>Help the earth, adopt this green plugin for your applications</description>
     <url>https://github.com/green-code-initiative/ecoCode-ios</url>
 
